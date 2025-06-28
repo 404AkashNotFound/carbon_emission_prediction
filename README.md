@@ -1,64 +1,115 @@
-# 🌱 CO₂ Emission Prediction Using Machine Learning  
-**Edunet Foundation – AICTE Virtual Internship Project**
+# CO₂ Emission Predictor – ML for a Greener Planet
+
+### Using Machine Learning to Model and Predict Environmental Impact
+### Shell–Edunet Foundation – AICTE Virtual Internship
+
+## 🧠 Project Overview
+
+This project uses machine learning to predict CO₂ emissions of countries using historical data. Built as part of a green skills initiative, the goal is to explore how AI and data science can be applied to tackle global climate challenges.
+
+We analyzed a wide range of socioeconomic, energy, climate, and population features to understand their influence on CO₂ emissions and built multiple regression models to make predictions based on these insights.
 
 ---
 
-## 👋 About the Project
+## 🌍 Dataset Summary
 
-This project was built as part of the **AICTE Virtual Internship Program** in collaboration with **Edunet Foundation**. The goal?  
-To **analyze global environmental and economic data** and build **machine learning models** that can **predict CO₂ emissions** of different countries based on a wide range of factors.
+**Source:** World Bank Climate Change Dataset (1990–2011)  
+This dataset provides environmental, economic, and social indicators for over 200 countries.
 
-We’re talking data science meets climate change — with a dash of Excel and a sprinkle of regression trees.
+### 📌 Key Data Categories:
 
----
-
-## 🌍 The Dataset
-
-We used the **Climate Change Data** from the **World Bank Group**, a rich and publicly available dataset covering most countries from **1990 to 2011**.
-
-It includes all kinds of useful information:
-
-### 🔑 Key Data Categories:
-- 🌫️ Greenhouse gases (CO₂, CH₄, N₂O, etc.)
-- 👨‍👩‍👧‍👦 Population stats (total, urban, growth rate)
-- 💰 Economy (GDP, GNI, FDI)
-- 🌾 Agriculture & land (cereal yield, protected areas)
-- ☁️ Climate (rainfall, natural disasters)
-- ⚡ Energy use
-- 🏥 Healthcare (medical personnel counts)
-- …and much more!
-
-The diversity of data gives us a great playground to explore relationships and trends around CO₂ emissions.
+- 🌫️ Greenhouse gases (CO₂, CH₄, N₂O)
+- 👥 Population (total, urban %, growth rate)
+- 💰 Economic indicators (GDP, GNI, FDI)
+- ⚡ Energy usage (per capita, consumption)
+- 🌾 Agriculture & land use (cereal yield, forest area)
+- ☁️ Climate and natural disasters
+- 🏥 Health infrastructure (medical staff, hospitals)
 
 ---
 
-## 🧭 Project Breakdown
+## 🛠️ Tech Stack
 
-We divided the work into **two main phases**:
-
-### 1️⃣ Data Cleaning & Preparation
-- Filled in missing values
-- Cleaned up weird outliers
-- Converted formats (because Excel always has surprises)
-- Selected meaningful features
-
-### 2️⃣ Data Exploration & Predictive Modeling
-- Visualized patterns and trends
-- Found correlations between country features and emissions
-- Built and evaluated multiple ML models like:
-  - Linear Regression
-  - Decision Trees & Random Forest
-  - XGBoost (because why not go fancy?)
-- Evaluated performance using R², MAE, RMSE, etc.
-- Visualized model predictions and compared them to actual data
+| Purpose              | Tools / Libraries                     |
+|----------------------|----------------------------------------|
+| Data Cleaning        | Python, Pandas, NumPy                 |
+| Visualization        | Matplotlib, Seaborn                   |
+| Modeling             | Scikit-learn, XGBoost                 |
+| Development          | Jupyter Notebook                      |
+| Data Source Format   | Excel (initial), CSV (processed)      |
 
 ---
 
-## 🧰 Tools & Tech Used
+## 🔍 Project Workflow
 
-- **Python** (the hero of the story)
-- **Pandas** & **NumPy** for data wrangling
-- **Matplotlib** & **Seaborn** for visualizations
-- **Scikit-learn** & **XGBoost** for modeling
-- **Jupyter Notebook** for development
-- **Excel** for some initial poking around
+### 1️⃣ Data Preprocessing
+- Cleaned raw Excel data  
+- Filled missing values  
+- Removed statistical outliers  
+- Converted categorical/numeric formats  
+- Selected relevant features based on correlation  
+
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Correlation heatmaps  
+- Country-wise emissions distribution  
+- Feature importance visualizations  
+- Trend analysis using line & bar plots  
+
+### 3️⃣ Machine Learning Models
+We built and compared the performance of:
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
+- XGBoost Regressor  
+
+### 4️⃣ Model Evaluation
+Evaluated model performance using:
+- R² Score — Coefficient of determination  
+- MAE — Mean Absolute Error  
+- RMSE — Root Mean Squared Error  
+
+---
+
+## 🚀 How to Run
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/404AkashNotFound/carbon_emission_prediction.git
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Launch the Jupyter Notebook:**
+   ```bash
+   jupyter notebook 1_data_preparation.ipynb
+   jupyter notebook 2_data_preparation.ipynb
+   
+   ```
+
+4. **Follow the notebook cells to:**
+   - Load and clean data  
+   - Visualize patterns  
+   - Train and evaluate models  
+
+---
+
+## ✨ Future Enhancements
+
+- 📈 Add time-series forecasting using ARIMA or Prophet  
+- 📊 Build an interactive dashboard with Streamlit  
+- 🌐 Integrate global live datasets via APIs  
+- 🐳 Dockerize the project for easy deployment  
+- 🔁 Add CI/CD pipeline using GitHub Actions  
+- 🧪 Include unit testing with Pytest  
+
+---
+
+## 👨‍💻 Author
+
+**Akash Kumar**  
+B.Tech (Electronics & Computer Science) – Final Year
+Summer Intern at Shell-Edunet Foundation
+📧 [aks231273@gmail.com]  
